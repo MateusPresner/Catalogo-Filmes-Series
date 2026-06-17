@@ -1,16 +1,42 @@
-# React + Vite
+# 🎬 Catálogo de Filmes e Séries
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema web desenvolvido em React para cadastro, organização e gerenciamento de filmes e séries favoritos.
 
-Currently, two official plugins are available:
+## 📖 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O Catálogo de Filmes e Séries foi desenvolvido com o objetivo de permitir que o usuário cadastre, consulte e organize informações sobre filmes e séries de forma simples e intuitiva.
 
-## React Compiler
+A aplicação possibilita adicionar títulos, visualizar informações cadastradas, marcar favoritos e realizar buscas por nome.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Além disso, o sistema utiliza armazenamento local do navegador para manter os dados salvos mesmo após o fechamento da aplicação.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Funcionalidades
+
+- Cadastro de filmes e séries
+- Pesquisa por título
+- Filtro por tipo (Filme ou Série)
+- Sistema de favoritos
+- Exclusão de registros
+- Armazenamento em LocalStorage
+- Integração com API externa para busca de informações
+- Interface responsiva
+- Navegação entre páginas utilizando React Router
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- React
+- React Router DOM
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Vite
+- LocalStorage
+- Fetch API
+- Git e GitHub
+
+
+
