@@ -184,11 +184,11 @@ Este projeto foi desenvolvido como atividade da disciplina de Desenvolvimento Fr
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
-**Mateus Henrique Presner**
+**Mateus Henrique Barros Presner e Matheus Borges de Avila**
 
-Curso: Engenharia de Software / Análise e Desenvolvimento de Sistemas
+Curso: Análise e Desenvolvimento de Sistemas 
 
 UniCesumar – Ponta Grossa
 
