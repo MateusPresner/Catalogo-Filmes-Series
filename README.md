@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎬 Catálogo de Filmes e Séries
 
 ## 📖 Descrição
@@ -197,3 +198,6 @@ UniCesumar – Ponta Grossa
 ## 📄 Licença
 
 Projeto desenvolvido exclusivamente para fins acadêmicos.
+=======
+
+>>>>>>> b325c883288e0304e438fd7515b036ae993d8594
