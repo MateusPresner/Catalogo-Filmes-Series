@@ -221,7 +221,9 @@ Projeto desenvolvido exclusivamente para fins acadêmicos.
 
 Sistema disponível online:
 
-https://catalogodefilmeseseries.vercel.app/
+https://catalogo-filmes-series.vercel.app/
+
+
 
 
 
