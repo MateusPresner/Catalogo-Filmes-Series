@@ -7,9 +7,9 @@ import Favorites from './pages/Favorites'
 
 function App() {
   const [catalogo, setCatalogo] = useState(() => {
-  const dadosSalvos = localStorage.getItem('catalogo')
-  return dadosSalvos ? JSON.parse(dadosSalvos) : []
-})
+    const dadosSalvos = localStorage.getItem('catalogo')
+    return dadosSalvos ? JSON.parse(dadosSalvos) : []
+  })
 
   useEffect(() => {
     localStorage.setItem('catalogo', JSON.stringify(catalogo))
@@ -63,6 +63,13 @@ function App() {
           }
         />
       </Routes>
+
+      <footer className="footer">
+        <p><strong>Catálogo de Filmes e Séries</strong></p>
+        <p>Projeto acadêmico desenvolvido utilizando React, Styled Components, LocalStorage e integração com API.</p>
+        <p>Feito por Mateus Henrique e Matheus Borges</p>
+        <p>Análise e Desenvolvimento de Sistemas - 2026</p>
+      </footer>
     </>
   )
 }

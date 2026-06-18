@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 # 🎬 Catálogo de Filmes e Séries
 
 ## 📖 Descrição
 
-O **Catálogo de Filmes e Séries** é uma aplicação web desenvolvida em React que permite cadastrar, organizar e gerenciar informações sobre filmes e séries favoritas.
+O Catálogo de Filmes e Séries é uma aplicação web desenvolvida em React que permite cadastrar, organizar e gerenciar informações sobre filmes e séries favoritas.
 
-O sistema foi criado com o objetivo de aplicar conceitos fundamentais de desenvolvimento Front-End, incluindo componentização, gerenciamento de estado, navegação entre páginas, consumo de APIs e armazenamento local de dados.
+O sistema foi criado com o objetivo de aplicar conceitos fundamentais de desenvolvimento Front-End, incluindo componentização, gerenciamento de estado, navegação entre páginas, consumo de APIs, estilização moderna e armazenamento local de dados.
 
 ---
 
@@ -13,9 +12,10 @@ O sistema foi criado com o objetivo de aplicar conceitos fundamentais de desenvo
 
 * Desenvolver uma aplicação utilizando React.
 * Aplicar conceitos de componentes reutilizáveis.
-* Utilizar React Router para navegação.
+* Utilizar React Router para navegação entre páginas.
 * Implementar armazenamento local utilizando LocalStorage.
 * Consumir dados de uma API externa utilizando Fetch API.
+* Utilizar Styled Components para estilização.
 * Criar uma interface simples, intuitiva e responsiva.
 
 ---
@@ -32,32 +32,42 @@ Permite cadastrar informações como:
 * Ano de lançamento
 * Nota
 * Sinopse
-
----
+* URL personalizada para imagem
 
 ### 🔎 Pesquisa
 
 O usuário pode pesquisar filmes e séries cadastrados através do campo de busca.
 
----
-
 ### ⭐ Favoritos
 
 É possível marcar filmes e séries como favoritos para facilitar a organização do catálogo.
-
----
 
 ### 🗑 Exclusão de Registros
 
 O sistema permite remover filmes e séries cadastrados.
 
----
+### 🎭 Filtro por Categoria
+
+Permite visualizar apenas filmes, apenas séries ou todos os registros cadastrados.
 
 ### 🌐 Integração com API
 
-A aplicação possui integração com uma API externa utilizando Fetch API, permitindo buscar informações automaticamente através do título informado.
+A aplicação possui integração com a API TVMaze utilizando Fetch API, permitindo buscar automaticamente:
 
----
+* Nome do título
+* Gêneros
+* Ano de lançamento
+* Nota
+* Sinopse
+* Pôster
+
+### 🖼 Exibição de Pôsteres
+
+O sistema exibe automaticamente imagens dos filmes e séries através da API, além de permitir o cadastro de uma URL personalizada para imagem.
+
+### 📝 Visualização Inteligente da Sinopse
+
+As sinopses são exibidas de forma resumida para manter a organização dos cards. Ao passar o mouse sobre o texto, é possível visualizar a descrição completa.
 
 ### 💾 Armazenamento Local
 
@@ -69,6 +79,7 @@ Todos os dados são armazenados utilizando LocalStorage, permitindo que as infor
 
 * React
 * React Router DOM
+* Styled Components
 * JavaScript (ES6+)
 * HTML5
 * CSS3
@@ -95,7 +106,7 @@ catalogo-filmes-series
 │   ├── pages
 │   │   ├── Home.jsx
 │   │   ├── AddMovie.jsx
-│   │   └── Favoritos.jsx
+│   │   └── Favorites.jsx
 │   │
 │   ├── App.jsx
 │   ├── main.jsx
@@ -150,15 +161,15 @@ O sistema possui as seguintes páginas:
 
 ### 🏠 Página Inicial
 
-Exibe todos os filmes e séries cadastrados, além do campo de pesquisa e filtros.
+Exibe todos os filmes e séries cadastrados, incluindo busca, filtros e gerenciamento dos registros.
 
 ### ➕ Página de Cadastro
 
-Permite adicionar novos filmes e séries ao catálogo.
+Permite adicionar novos filmes e séries manualmente ou preencher automaticamente os dados através da API.
 
 ### ⭐ Página de Favoritos
 
-Lista os itens marcados como favoritos pelo usuário.
+Lista apenas os itens marcados como favoritos pelo usuário.
 
 ---
 
@@ -173,7 +184,10 @@ Durante o desenvolvimento foram utilizados os seguintes conceitos:
 * React Router
 * LocalStorage
 * Fetch API
+* Styled Components
+* Consumo de API REST
 * Manipulação de Eventos
+* Persistência de Dados
 * Responsividade
 * Organização de Código
 
@@ -187,17 +201,19 @@ Este projeto foi desenvolvido como atividade da disciplina de Desenvolvimento Fr
 
 ## 👨‍💻 Autores
 
-**Mateus Henrique Barros Presner e Matheus Borges de Avila**
+Mateus Henrique Barros Presner
 
-Curso: Análise e Desenvolvimento de Sistemas 
+Matheus Borges de Ávila
+
+Curso: Análise e Desenvolvimento de Sistemas
 
 UniCesumar – Ponta Grossa
+
+Ano: 2026
 
 ---
 
 ## 📄 Licença
 
 Projeto desenvolvido exclusivamente para fins acadêmicos.
-=======
 
->>>>>>> b325c883288e0304e438fd7515b036ae993d8594

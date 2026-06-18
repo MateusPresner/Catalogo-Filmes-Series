@@ -76,8 +76,9 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 420px));
+  gap: 20px;
+  justify-content: center;
 }
 
 .card {
@@ -199,4 +200,35 @@ textarea {
   .container {
     width: 95%;
   }
+}
+   .poster {
+    width: 180px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+.sinopse {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 60px;
+  padding: 25px;
+  text-align: center;
+  background-color: #0f172a;
+  color: white;
+  line-height: 1.8;
+  display: block;
+}
+
+.footer strong {
+  font-size: 18px;
 }

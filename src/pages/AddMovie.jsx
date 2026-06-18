@@ -10,6 +10,7 @@ function AddMovie({ adicionarItem }) {
   const [ano, setAno] = useState('')
   const [nota, setNota] = useState('')
   const [sinopse, setSinopse] = useState('')
+  const [imagem, setImagem] = useState('')
   const [mensagem, setMensagem] = useState('')
 
   async function buscarSugestao() {
@@ -30,6 +31,8 @@ function AddMovie({ adicionarItem }) {
         setGenero(serie.genres?.join(', ') || '')
         setAno(serie.premiered ? serie.premiered.substring(0, 4) : '')
         setNota(serie.rating?.average || '')
+        setImagem(serie.image?.original || serie.image?.medium || '') 
+
         setSinopse(
           serie.summary
             ? serie.summary.replace(/<[^>]*>/g, '')
@@ -58,15 +61,16 @@ function AddMovie({ adicionarItem }) {
       return
     }
 
-    const novoItem = {
-      id: Date.now(),
-      titulo,
-      tipo,
-      genero,
-      ano,
-      nota,
-      sinopse,
-      favorito: false,
+     const novoItem = {
+     id: Date.now(),
+     titulo,
+     imagem,
+     tipo,
+     genero,
+     ano,
+     nota,
+     sinopse, 
+     favorito: false
     }
 
     adicionarItem(novoItem)
@@ -86,7 +90,13 @@ function AddMovie({ adicionarItem }) {
             onChange={(e) => setTitulo(e.target.value)}
             placeholder="Ex: Stranger Things"
           />
-
+          <label>URL da Imagem</label>
+          <input
+            type="text"
+            placeholder="Cole a URL da capa ou pôster"
+            value={imagem}
+            onChange={(e) => setImagem(e.target.value)}
+          />
           <button type="button" onClick={buscarSugestao} className="btn-api">
             Buscar informações pela API
           </button>
