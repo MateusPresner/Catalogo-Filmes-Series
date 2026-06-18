@@ -217,3 +217,11 @@ Ano: 2026
 
 Projeto desenvolvido exclusivamente para fins acadêmicos.
 
+## 🌐 Acesso ao Sistema
+
+Sistema disponível online:
+
+https://catalogodefilmeseseries.vercel.app/
+
+
+
